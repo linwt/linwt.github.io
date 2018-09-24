@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://linwt.github.io/about/</loc>
+    <lastmod>2018-09-24T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://linwt.github.io/post/blog/</loc>
     <lastmod>2018-09-24T00:00:00+08:00</lastmod>
   </url>

@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="https://linwt.github.io//images/apple-touch-icon.png">
     <title>
         
-        使用hugo搭建个人博客网站 - Boy ln(～￣▽￣)～ 
+        About Me - Boy ln(～￣▽￣)～ 
         
     </title>
     <meta name="keywords" content=" " />
@@ -60,187 +60,27 @@
     <article class="main-content page-page">
         <div class="post-header">
             <h1 class="post-title" itemprop="name headline">
-                使用hugo搭建个人博客网站
+                About Me
             </h1>
             <div class="post-data">
-                Published on Sep 24, 2018 ,2 min reading time
+                Published on Sep 24, 2018 ,1 min reading time
             </div>
         </div>
         <div id="post-content" class="post-content">
             
-<p class="post-tags"> 
-	
-	<a href="https://linwt.github.io/tags/hugo">hugo</a>
-	
-	<a href="https://linwt.github.io/tags/git">git</a>
-	
-</p>
-
  
 
-<p>接触github不久，前几天看到一个师兄十分简洁的博客网站，觉得很高大上，就开始去网上查找相关资料自己搭一个网站，下面就是我的搭建过程。想要模仿搭建一个属于自己的博客网站的话，只要把我的用户名“linwt”改成你的用户名即可。</p>
+<h1 id="学习方向">学习方向</h1>
 
-<h1 id="安装">安装</h1>
+<p>大数据</p>
 
-<h2 id="git">Git</h2>
+<h1 id="练手项目">练手项目</h1>
 
-<p>下载地址 <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-
-<h2 id="hugo-windows客户端">hugo windows客户端</h2>
-
-<ol>
-<li>下载地址 <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></li>
-<li>下载后解压到任一目录（E:\)</li>
-<li>windows环境变量path添加hugo.exe所在路径（E:\hugo_0.48_Windows-64bit\）</li>
-<li>命令行中检查是否安装成功：hugo version</li>
-</ol>
-
-<h2 id="github账户">github账户</h2>
-
-<p>熟悉基本的github操作</p>
-
-<h1 id="生成站点">生成站点</h1>
-
-<ol>
-<li>创建一个文件夹用于保存hugo要生成的文件（E:\hugo\）</li>
-<li>目录右键，选择git bash here，进入git命令行工具</li>
-
-<li><p>创建站点</p>
-
-<pre><code>$ hugo new site mysite
-</code></pre>
-
-<p>创建完成后会生成如图的目录结构<br />
-<img src="https://github.com/linwt/linwt.github.io/blob/master/images/post/mysite.png" alt="mysite" /></p></li>
-</ol>
-
-<h1 id="安装主题">安装主题</h1>
-
-<h2 id="克隆主题">克隆主题</h2>
-
-<p>/e/hugo/mysite/themes</p>
-
-<pre><code>$ git clone https://github.com/mjyi/Gemini.git
-</code></pre>
-
-<h2 id="修改全局配置">修改全局配置</h2>
-
-<p>mysite/config.toml</p>
-
-<pre><code>baseurl = &quot;https://linwt.github.io/&quot;
-title = &quot;Boy ln(～￣▽￣)～ &quot;
-canonifyurls = true
-paginate = 3
-languageCode = &quot;en-us&quot;
-MetaDataFormat = &quot;yaml&quot;
-theme = &quot;Gemini&quot;
-disqusShortname = &quot;&quot; 
-googleAnalytics = &quot;&quot; 
-paginate = 6  
-
-[params]
-  Keywords = &quot;&quot;
-  Author = &quot;Boy ln&quot;
-  recentPostCount = 7
-  intro = [&quot;知识改变命运&quot;,&quot;学习就是加速度&quot;]
-
-[[params.social]]
-  title = &quot;Email&quot;
-  url = &quot;mailto:boyln10086@gmail.com&quot;
-[[params.social]]
-  title = &quot;Github&quot;
-  url = &quot;https://github.com/linwt&quot;
-[[params.social]]
-  title = &quot;RSS&quot;
-  url = &quot;https://linwt.github.io/index.xml&quot; #default index.xml
-
-[[menu.main]]
-  name = &quot;Archives&quot;
-  url = &quot;/post/&quot;
-  weight = -200
-[[menu.main]]
-  name = &quot;Tags&quot;
-  url = &quot;/tags/&quot;
-  weight = -180
-[[menu.main]]
-  name = &quot;About&quot;
-  url = &quot;/about&quot;
-  weight = -160  
-</code></pre>
-
-<h2 id="修改博客模板">修改博客模板</h2>
-
-<p>mysite/themes/Gemini/archetypes/post.md</p>
-
-<pre><code>+++
-title = &quot;&quot;
-tags = ['']
-categories = ['']
-image = &quot;/images/thumbs/0.jpg&quot; 
-draft = false
-comments = true
-toc = true
-date = 2018-09-24
-+++
-
-博客内容
-</code></pre>
-
-<h1 id="博客预览">博客预览</h1>
-
-<h2 id="创建博客">创建博客</h2>
-
-<p>/e/hugo/mysite</p>
-
-<pre><code>$ hugo new post/blog.md
-</code></pre>
-
-<p>创建完成后会在mysite/content/post下生成一个blog.md文件，可用Notepad编辑文件的博客内容</p>
-
-<h2 id="启动hugo">启动hugo</h2>
-
-<p>/e/hugo/mysite</p>
-
-<pre><code>$ hugo server
-</code></pre>
-
-<h2 id="浏览器访问">浏览器访问</h2>
-
-<pre><code>localhost:1313
-</code></pre>
-
-<h1 id="部署到github">部署到github</h1>
-
-<h2 id="新建库">新建库</h2>
-
-<p>库名必须为“用户名.github.io”（linwt.github.io）</p>
-
-<h2 id="生成静态网站文件">生成静态网站文件</h2>
-
-<p>/e/hugo/mysite</p>
-
-<pre><code>$ hugo  
-</code></pre>
-
-<p>完成后会生成一个public文件夹，里面的文件就是要上传到github的静态网站文件</p>
-
-<h2 id="上传public">上传public</h2>
-
-<p>/e/hugo/mysite</p>
-
-<pre><code>$ cd public
-$ git init
-$ git remote add origin https://github.com/linwt/linwt.github.io.git 
-$ git add -A
-$ git commit -m &quot;hugo file&quot;
-$ git pull origin master （若github上的库有修改的话要先pull）
-$ git push -u origin master
-输入用户名、密码
-</code></pre>
-
-<h2 id="访问网站">访问网站</h2>
-
-<p><a href="https://linwt.github.io">https://linwt.github.io</a></p>
+<ul>
+<li>SparkSQL：慕课网日志分析<br /></li>
+<li>SparkStreaming：爱奇艺实时流统计<br /></li>
+<li>SparkMLlib：智慧交通</li>
+</ul>
 
             <p class="post-info">
                 本文由
@@ -259,16 +99,16 @@ $ git push -u origin master
         <div class="bottom-bar-inner">
             <div class="bottom-bar-items social-share left">
                 <span class="bottom-bar-item">Share : </span>
-                <span class="bottom-bar-item bottom-bar-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2flinwt.github.io%2fpost%2fblog%2f" target="_blank" title="使用hugo搭建个人博客网站" rel="nofollow">Facebook</a></span>
-                <span class="bottom-bar-item bottom-bar-twitter"><a href="https://twitter.com/intent/tweet?url=https%3a%2f%2flinwt.github.io%2fpost%2fblog%2f&text=%e4%bd%bf%e7%94%a8hugo%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99" target="_blank" title="使用hugo搭建个人博客网站" rel="nofollow">Twitter</a></span>
-                <span class="bottom-bar-item bottom-bar-weibo"><a href="http://service.weibo.com/share/share.php?url=https%3a%2f%2flinwt.github.io%2fpost%2fblog%2f&amp;title=%e4%bd%bf%e7%94%a8hugo%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99" target="_blank" title="使用hugo搭建个人博客网站" rel="nofollow">Weibo</a></span>
-                <span class="bottom-bar-item bottom-bar-qrcode"><a href="//pan.baidu.com/share/qrcode?w=300&amp;h=300&amp;url=https%3a%2f%2flinwt.github.io%2fpost%2fblog%2f" target="_blank" rel="nofollow">QRcode</a></span>
+                <span class="bottom-bar-item bottom-bar-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2flinwt.github.io%2fabout%2f" target="_blank" title="About Me" rel="nofollow">Facebook</a></span>
+                <span class="bottom-bar-item bottom-bar-twitter"><a href="https://twitter.com/intent/tweet?url=https%3a%2f%2flinwt.github.io%2fabout%2f&text=About%20Me" target="_blank" title="About Me" rel="nofollow">Twitter</a></span>
+                <span class="bottom-bar-item bottom-bar-weibo"><a href="http://service.weibo.com/share/share.php?url=https%3a%2f%2flinwt.github.io%2fabout%2f&amp;title=About%20Me" target="_blank" title="About Me" rel="nofollow">Weibo</a></span>
+                <span class="bottom-bar-item bottom-bar-qrcode"><a href="//pan.baidu.com/share/qrcode?w=300&amp;h=300&amp;url=https%3a%2f%2flinwt.github.io%2fabout%2f" target="_blank" rel="nofollow">QRcode</a></span>
             </div>
 
             <div class="bottom-bar-items right">
                 
-                <span class="bottom-bar-item"><a href="https://linwt.github.io/about/" title="About Me">←</a></span> 
                 
+                <span class="bottom-bar-item"><a href="https://linwt.github.io/post/blog/" title="使用hugo搭建个人博客网站">→</a></span> 
                 <span class="bottom-bar-item"></span> <span class="bottom-bar-item"><a href="#footer">↓</a></span>
                 <span class="bottom-bar-item"><a href="#">↑</a></span>
             </div>

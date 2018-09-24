@@ -12,7 +12,19 @@
     
     
     <item>
-      <title>使用hugo搭建个人博客</title>
+      <title>About Me</title>
+      <link>https://linwt.github.io/about/</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://linwt.github.io/about/</guid>
+      <description> 学习方向 大数据
+练手项目  SparkSQL：慕课网日志分析
+ SparkStreaming：爱奇艺实时流统计
+ SparkMLlib：智慧交通  </description>
+    </item>
+    
+    <item>
+      <title>使用hugo搭建个人博客网站</title>
       <link>https://linwt.github.io/post/blog/</link>
       <pubDate>Mon, 24 Sep 2018 00:00:00 +0800</pubDate>
       
