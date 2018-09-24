@@ -1,13 +1,13 @@
-+++
-title = "使用hugo搭建个人博客网站"
-tags = ['hugo','git']
-categories = ['教程']
-image = "/images/thumbs/0.jpg" 
-draft = false
-comments = true
-toc = true
-date = 2018-09-24
-+++
++++  
+title = "使用hugo搭建个人博客网站"  
+tags = ['hugo','git']  
+categories = ['教程']  
+image = "/images/thumbs/0.jpg"  
+draft = false  
+comments = true  
+toc = true  
+date = 2018-09-24  
++++  
 接触github不久，前几天看到一个师兄十分简洁的博客网站，觉得很高大上，就开始去网上查找相关资料自己搭一个网站，下面就是我的搭建过程。想要模仿搭建一个属于自己的博客网站的话，只要把我的用户名“linwt”改成你的用户名即可。
 # 安装
 
