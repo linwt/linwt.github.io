@@ -31,7 +31,7 @@ date = 2018-09-24
 		$ hugo new site mysite
 	
 	创建完成后会生成如图的目录结构  
-![mysite](https://github.com/linwt/linwt.github.io/blob/master/images/post/mysite.png)
+![mysite](https://linwt.github.io/images/post/mysite.png)
 	
 # 安装主题
 
